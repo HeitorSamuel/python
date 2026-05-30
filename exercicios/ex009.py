@@ -1,21 +1,14 @@
-'''
 num = int(input('Digite um número inteiro: '))
-i = 0
-while i <= 10:
-    print('{} X {} = {}'.format(num, i, num*i))
-    i += 1
-
-'''
-num = int(input('Digite um número inteiro:'))
-print('===== Tabuada de {} ====='.format(num))
-print('{} x 0 = {}'.format(num, num*0))
-print('{} x 1 = {}'.format(num, num*1))
-print('{} x 2 = {}'.format(num, num*2))
-print('{} x 3 = {}'.format(num, num*3))
-print('{} x 4 = {}'.format(num, num*4))
-print('{} x 5 = {}'.format(num, num*5))
-print('{} x 6 = {}'.format(num, num*6))
-print('{} x 7 = {}'.format(num, num*7))
-print('{} x 8 = {}'.format(num, num*8))
-print('{} x 9 = {}'.format(num, num*9))
-print('{} x 10 = {}'.format(num, num*10))
+print(('=' * 5 + ' Tabuada de {} ' + '='*5).format(num))
+print('{} x {} = {}'.format(num, 0, num*0))
+print('{} x {} = {}'.format(num, 1, num*1))
+print('{} x {} = {}'.format(num, 2, num*2))
+print('{} x {} = {}'.format(num, 3, num*3))
+print('{} x {} = {}'.format(num, 4, num*4))
+print('{} x {} = {}'.format(num, 5, num*5))
+print('{} x {} = {}'.format(num, 6, num*6))
+print('{} x {} = {}'.format(num, 7, num*7))
+print('{} x {} = {}'.format(num, 8, num*8))
+print('{} x {} = {}'.format(num, 9, num*9))
+print('{} x {} = {}'.format(num, 10, num*10))
+print('='*24)

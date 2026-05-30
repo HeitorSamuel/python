@@ -1,2 +1,2 @@
-dinh = float(input('Digite quantos reais você tem na carteira: '))
-print('O valor dessa quantia em dólares é de US${:.2f}'.format(dinh/5.06))
+dinh = float(input('Digite quantos reais você tem na carteira: R$'))
+print('Você tem R${}, o valor dessa quantia em dólares é de US${:.2f}, \no valor dessa qauntia em euros é de €{:.2f}'.format(dinh, dinh/5.06, dinh/5.90))
