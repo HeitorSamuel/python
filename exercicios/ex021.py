@@ -1,4 +1,8 @@
 import pygame
 
-print("Pygame instalado com sucesso!")
-print(pygame.__version__)
+pygame.init()
+
+pygame.mixer.music.load('exercicios/lonely.mp3')
+pygame.mixer.music.play()
+
+input('Pressione Enter para sair...')
