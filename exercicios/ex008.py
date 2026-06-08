@@ -5,7 +5,7 @@ cores = {
     'vermelho':'\033[31m',
     'azul':'\033[34m',
     'roxo':'\033[35m',
-    'ciano':'\033[36m',
+    'ciano':'\033[36m'
 }
 
 medida = float(input('Digite um valor em {}metros(m){}: '.format(cores['azul'], cores['limpar'])))

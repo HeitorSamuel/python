@@ -4,21 +4,20 @@ cores = {
     'verde':'\033[32m',
     'vermelho':'\033[31m',
     'azul':'\033[34m',
-    'roxo':'\033[35m',
-    'ciano':'\033[36m',
+    'roxo':'\033[35m'
 }
 
 num = int(input('{}Digite um número inteiro:{} '.format(cores['amarelo'], cores['limpar'])))
 print(('{}'+'=' * 5 + ' Tabuada de {} ' + '='*5+'{}').format(cores['ciano'], num, cores['limpar']))
-print('{} x {} = {}'.format(num, 0, num*0))
-print('{} x {} = {}'.format(num, 1, num*1))
-print('{} x {} = {}'.format(num, 2, num*2))
-print('{} x {} = {}'.format(num, 3, num*3))
-print('{} x {} = {}'.format(num, 4, num*4))
-print('{} x {} = {}'.format(num, 5, num*5))
-print('{} x {} = {}'.format(num, 6, num*6))
-print('{} x {} = {}'.format(num, 7, num*7))
-print('{} x {} = {}'.format(num, 8, num*8))
-print('{} x {} = {}'.format(num, 9, num*9))
-print('{} x {} = {}'.format(num, 10, num*10))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 0, cores['limpar'], cores['vermelho'], num*0, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 1, cores['limpar'], cores['vermelho'], num*1, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 2, cores['limpar'], cores['vermelho'], num*2, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 3, cores['limpar'], cores['vermelho'], num*3, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 4, cores['limpar'], cores['vermelho'], num*4, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 5, cores['limpar'], cores['vermelho'], num*5, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 6, cores['limpar'], cores['vermelho'], num*6, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 7, cores['limpar'], cores['vermelho'], num*7, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 8, cores['limpar'], cores['vermelho'], num*8, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 9, cores['limpar'], cores['vermelho'], num*9, cores['limpar']))
+print('{}{}{} x {}{}{} = {}{}{}'.format(cores['azul'], num, cores['limpar'], cores['verde'], 10, cores['limpar'], cores['vermelho'], num*10, cores['limpar']))
 print(('{}'+'='*24+'{}').format(cores['ciano'], cores['limpar']))
