@@ -10,7 +10,7 @@ elif idade > 9 and idade <= 14:
     print('Você tem {} anos! Você é da categoria INFANTIL de natação!'.format(idade))
 elif idade > 14 and idade <= 19:
     print('Você tem {} anos! Você é da categoria JUNIOR de natação!'.format(idade))
-elif idade == 20:
+elif idade > 19 and idade <= 25:
     print('Você tem {} anos! Você é da categoria SÊNIOR de natação!'.format(idade))
-elif idade > 20:
+elif idade > 25:
     print('Você tem {} anos! Você é da categoria MASTER de natação!'.format(idade))

@@ -18,7 +18,7 @@ if abs(retaB-retaC) < retaA < retaB+retaC and abs(retaA-retaC) < retaB < retaA+r
         print('É um triangulo Equilátero, pois todos os seu lados são iguais')
     elif retaA == retaB != retaC or retaA == retaC != retaB or retaB == retaC != retaA:
         print('É um triângulo isósceles, pois possui 2 lados iguais!')
-    elif retaA != retaB != retaC:
+    elif retaA != retaB != retaC != retaA:
         print('É um triângulo escaleno, pois todos os lados são diferentes!')
 else:
     print('{}As retas{} {}{}{}, {}{}{} e {}{}{} {}não podem formar um triângulo!{}'.format(cores['roxo'], cores['limpar'], cores['azul'], retaA, cores['limpar'], cores['amarelo'], retaB, cores['limpar'], cores['ciano'], retaC, cores['limpar'], cores['vermelho'], cores['limpar']))
