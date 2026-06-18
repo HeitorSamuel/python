@@ -9,6 +9,9 @@ for r in range(1, 6):
     else:
         if peso > maior:
             maior = peso
-        elif peso < maior:
+        elif peso < menor:
             menor = peso
+print('-='*22)
+print('O maior peso é {}Kg e o menor peso é {}Kg'.format(maior, menor))
+print('-='*22)
         

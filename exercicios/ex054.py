@@ -17,3 +17,4 @@ for c in range (0, 7):
 
 print('-='*25)
 print('{} pessoas ainda NÃO ATINGIRAM A MAIORIDADE e\n{} pessoas já SÃO MAIORES DE IDADE'.format(contMenor, contMaior))
+print('-='*25)
