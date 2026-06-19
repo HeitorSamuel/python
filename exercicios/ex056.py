@@ -1,24 +1,25 @@
 somaIdade = 0
 maiorIdade = 0
-QuantMulher = 0
-NomeMaiorIdade = ''
+quantMulher = 0
+nomeMaiorIdade = ''
 
 for c in range(1, 5):
     print('-='*20)
-    nome = str(input('Digite o seu nome: ')).strip().lower()
+    nome = str(input('Digite o seu nome: ')).strip().upper()
     idade = int(input('Digite a sua idade: '))
-    sexo = str(input('Digite o seu sexo: ')).strip().lower()
+    sexo = str(input('Digite o seu sexo: ')).strip().upper()
     somaIdade += idade
-    if sexo == 'masculino':
+    if sexo == 'MASCULINO':
         if idade > maiorIdade:
             maiorIdade = idade
-            NomeMaiorIdade = nome
-    elif sexo == 'feminino':
+            nomeMaiorIdade = nome
+    elif sexo == 'FEMININO':
         if idade < 20:
-            QuantMulher += 1
+            quantMulher += 1
+
 print('-='*20)
 print('A MÉDIA DE IDADE do grupo é: {:.1f}'.format(somaIdade/4))
-print('O nome do HOMEM MAIS VELHO é: {}. Ele tem {} anos.'.format(NomeMaiorIdade, maiorIdade))
-print('A quantidade de mulheres que têm MENOS DE 20 ANOS é: {}'.format(QuantMulher))
+print('O nome do HOMEM MAIS VELHO é: {}. Ele tem {} anos!'.format(nomeMaiorIdade, maiorIdade))
+print('A quantidade de mulheres que têm MENOS DE 20 ANOS é: {}'.format(quantMulher))
 
 print('-='*20)
