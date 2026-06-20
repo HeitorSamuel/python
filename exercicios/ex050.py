@@ -1,6 +1,9 @@
 s = 0
-for c in range(0, 6):
-    num = int(input('Digite um número inteiro: '))
+cont = 0
+
+for c in range(1, 7):
+    num = int(input('Digite o {}° número inteiro: '.format(c)))
     if num % 2 == 0:
         s += num
-print('A soma dos números que são pares é {}!'.format(s))
+        cont += 1
+print('Você digitou {} números PARES e a soma deles é {}!'.format(cont, s))
