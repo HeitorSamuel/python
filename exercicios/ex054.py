@@ -4,10 +4,10 @@ anoAtual = date.today().year
 contMaior = 0
 contMenor = 0
 
-for c in range (0, 7):
-    anoNasc = int(input('Digite o ano do seu nascimento: '))
+for c in range (1, 8):
+    anoNasc = int(input('Digite o ano do nascimento da {}ª pessoa: '.format(c)))
     if anoNasc < 1926 or anoNasc > anoAtual:
-        print('Digite um ano de nascimento válido!')
+        print('Digite um ano de nascimento válido! Tente Novamente!')
         break
     else:
         if (anoAtual-anoNasc) >= 18:
