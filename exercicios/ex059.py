@@ -1,3 +1,5 @@
+#FALTA COMPLETAR
+
 num1 = float(input('Digite o 1° número: '))
 num2 = float(input('Digite o 2° número: '))
 listaNum = [num1, num2]
