@@ -11,8 +11,9 @@ print('Os 10 primeiros termos dessa PA são:', end=' ')
 while cont < 10:
     print(termoAtual, end=' ')
     termoAtual += razao
-    ultimoTerm += termoAtual
+    ultimoTerm = termoAtual - razao
     cont += 1
+
 print('''
 
 Você quer mostrar mais algum termo?
@@ -21,16 +22,20 @@ Você quer mostrar mais algum termo?
 ''')
 opcao = int(input('Digite a sua opção: '))
 
-while opcao != 0:
+while opcao == 1:
     termo = int(input('Quantos termos você quer? '))
     termoCont = termo
     while termoCont > 0:
         ultimoTerm += razao
-        print(ultimoTerm)
+        print(ultimoTerm, end=' ')
         termoCont -= 1
-    print('Os {} termos a mais dessa PA são esses acima!'.format(termo))
-    if termoCont == 0:
-        print('FIM DO PROGRAMA')
+    print('''
+
+Você quer mostrar mais algum termo?
+[0] NÃO
+[1] SIM    
+    ''')
+    opcao = int(input('Digite a sua opção: '))
 
 print('FIM DO PROGRAMA')
 
