@@ -17,6 +17,7 @@ while cont < 10:
 print('''
 
 Você quer mostrar mais algum termo?
+      
 [0] NÃO
 [1] SIM    
 ''')
@@ -24,19 +25,20 @@ opcao = int(input('Digite a sua opção: '))
 
 while opcao == 1:
     termo = int(input('Quantos termos você quer? '))
-    termoCont = termo
-    while termoCont > 0:
+    cont += termo
+    while termo > 0:
         ultimoTerm += razao
         print(ultimoTerm, end=' ')
-        termoCont -= 1
+        termo -= 1
     print('''
 
 Você quer mostrar mais algum termo?
+          
 [0] NÃO
 [1] SIM    
     ''')
     opcao = int(input('Digite a sua opção: '))
 
-print('FIM DO PROGRAMA')
-
+print('FIM DO PROGRAMA!')
+print('Ao todo foram {} termos digitados!'.format(cont))
         
