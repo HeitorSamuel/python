@@ -1,29 +1,44 @@
 #FALTA COMPLETAR
-
+from time import sleep
 num1 = float(input('Digite o 1° número: '))
 num2 = float(input('Digite o 2° número: '))
-listaNum = [num1, num2]
+opcao = 0
 
-
-opcao = int(input('SUA ESCOLHA: '))
-while opcao <= 5 and opcao >= 1:
-    print('''
-    ESCOLHA UMA DAS OPÇÕES ABAIXO:
-    [1] SOMAR
-    [2] MULTIPLICAR
-    [3] MAIOR
-    [4] NOVOS NÚMEROS
-    [5] SAIR DO PROGRAMA    
-    ''')
-
-if opcao == 1:
-    print('A soma do n° {} com o n° {} é {}'.format(num1, num2, num1+num2))
-elif opcao == 2:
-    print('A Multiplicação do n° {} com o n° {} é {}'.format(num1, num2, num1*num2))
-elif opcao == 3:
-    if num1 > num2:
-        print('O n° {} é maior que o m° {}'.format(num1, num2))
-    elif num2 > num1:
-        print('O n° {} é maior que o n° {}'.format(num2, num1))
-elif opcao == 4:
-    novoNum = int(input('Digite um novo número: '))
+while opcao != 5:
+    print('''========================================         
+ESCOLHA UMA DAS OPÇÕES ABAIXO:
+[1] SOMAR
+[2] MULTIPLICAR
+[3] MAIOR
+[4] NOVOS NÚMEROS
+[5] SAIR DO PROGRAMA    
+========================================''')
+    opcao = int(input('SUA ESCOLHA: '))
+    
+    if opcao == 1:
+        sleep(1)
+        print('A soma do número {} com o número {} é {}'.format(num1, num2, num1+num2))
+    elif opcao == 2:
+        sleep(1)
+        print('A Multiplicação do número {} com o número {} é {}'.format(num1, num2, num1*num2))
+    elif opcao == 3:
+        if num1 > num2:
+            sleep(1)
+            print('O número {} é maior que o número {}'.format(num1, num2))
+        elif num2 > num1:
+            sleep(1)
+            print('O número {} é maior que o número {}'.format(num2, num1))
+        elif num1 == num2:
+            sleep(1)
+            print('Não há nunhum número MAIOR! Ambos são iguais a {}!'.format(num1))
+    elif opcao == 4:
+        num1 = float(input('Digite o 1° número: '))
+        num2 = float(input('Digite o 2° número: '))
+    elif opcao < 1 or opcao > 5:
+        sleep(1)
+        print('Opção Inválida! Tente Novamente!')
+print('-='*20)
+print('PROCESANDO...')
+print('-='*20)
+sleep(2)
+print('FIM DO PROGRAMA!')
