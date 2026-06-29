@@ -2,7 +2,7 @@ print('='*40)
 print('{:^40}'.format(' SEQUÊNCIA DE FIBONACCI '))
 print('='*40)
 
-termo = int(input('Quantos termos você quer? '))
+termo = int(input('Quantos termos você quer? ').strip())
 a = 0
 b = 1
 
