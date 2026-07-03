@@ -1,6 +1,4 @@
-somaIdade = 0
-maiorIdade = 0
-quantMulher = 0
+somaIdade = maiorIdade = quantMulher = 0
 nomeMaiorIdade = ''
 
 for c in range(1, 5):

@@ -1,6 +1,5 @@
 frase = str(input('Digite qualquer frase: ')).strip().upper().replace(' ', '')
 
-
 fraseComprim = len(frase)-1
 
 fraseInvert = ''

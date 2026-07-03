@@ -1,8 +1,7 @@
 from datetime import date
 
 anoAtual = date.today().year
-contMaior = 0
-contMenor = 0
+contMaior = contMenor = 0
 
 for c in range (1, 8):
     anoNasc = int(input('Digite o ano do nascimento da {}ª pessoa: '.format(c)))

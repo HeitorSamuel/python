@@ -1,9 +1,6 @@
-num = 0
-cont = 0
-soma = 0
+num = cont = soma = 0
 while num != 999:
-    num = int(input('Digite um número inteiro: ').strip())
-    print('PARA PARAR O PROGRAMA, DIGITE: 999')
+    num = int(input('Digite um número inteiro [999 PARA PARAR]: ').strip())
     if num != 999:
         soma += num
         cont += 1
