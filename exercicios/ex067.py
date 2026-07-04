@@ -1,8 +1,9 @@
 valor = 0
-cont = 1
-
 while True:
+    print('-='*25)
     valor = int(input('Quer ver a tabuada de qual valor? '))
+    print('-='*25)
+    cont = 1
     if valor < 0:
         break
     while cont <= 10:
