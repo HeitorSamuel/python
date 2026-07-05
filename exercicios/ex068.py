@@ -4,12 +4,30 @@ print('-='*25)
 print('VAMOS JOGAR PAR OU ÍMPAR')
 print('-='*25)
 
-jogador = int(input('Digite um número: '))
+resultado = ''
+escolhaJog = ''
+vitoria = 0
 
-escolhaJog = str(input('Par ou Ímpar? [P/I] ')).strip()[0]
+while escolhaJog == resultado:
+    
+    jogador = int(input('Digite um número: '))
 
-computador = randint(0, 10)
+    escolhaJog = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]
 
-somaNum = computador + jogador
+    comput = randint(0, 10)
 
-print(somaNum)
+    somaNum = comput + jogador
+
+    if somaNum % 2 == 0:
+        resultado = 'P'
+        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU PAR')
+    elif somaNum % 2 == 1:
+        resultado = 'I'
+        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU ÍMPAR')
+    
+    vitoria += 1
+    print('Você VENCEU!')
+    print('Vamos Jogar novamente...')
+
+print('Você PERDEU!')
+print(f'GAME OVER! Você venceu {vitoria} vez(es)')
