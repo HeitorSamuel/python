@@ -5,10 +5,11 @@ print('VAMOS JOGAR PAR OU ÍMPAR')
 print('-='*25)
 
 resultado = ''
+resposta = 'VENCEU'
 escolhaJog = ''
 vitoria = 0
 
-while escolhaJog == resultado:
+while True:
     
     jogador = int(input('Digite um número: '))
 
@@ -22,17 +23,22 @@ while escolhaJog == resultado:
         resultado = 'PAR'
         print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resultado}')
         if escolhaJog == resultado[0]:
-            print('Você VENCEU!')
+            resposta = 'VENCEU'
+            print(f'Você {resposta}!')
             print('Vamos Jogar novamente...')
             vitoria += 1
+        else:
+            print('Você PERDEU!')
 
     elif somaNum % 2 == 1:
         resultado = 'ÍMPAR'
         print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resultado}')
         if escolhaJog == resultado[0]:
+            resposta = 'VENCEU'
             print('Você VENCEU!')
             print('Vamos Jogar novamente...')
             vitoria += 1
+        else:
+            print('Você PERDEU!')
 
-print('Você PERDEU!')
 print(f'GAME OVER! Você venceu {vitoria} vez(es)')
