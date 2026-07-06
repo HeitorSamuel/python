@@ -19,15 +19,20 @@ while escolhaJog == resultado:
     somaNum = comput + jogador
 
     if somaNum % 2 == 0:
-        resultado = 'P'
-        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU PAR')
+        resultado = 'PAR'
+        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resultado}')
+        if escolhaJog == resultado[0]:
+            print('Você VENCEU!')
+            print('Vamos Jogar novamente...')
+            vitoria += 1
+
     elif somaNum % 2 == 1:
-        resultado = 'I'
-        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU ÍMPAR')
-    
-    vitoria += 1
-    print('Você VENCEU!')
-    print('Vamos Jogar novamente...')
+        resultado = 'ÍMPAR'
+        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resultado}')
+        if escolhaJog == resultado[0]:
+            print('Você VENCEU!')
+            print('Vamos Jogar novamente...')
+            vitoria += 1
 
 print('Você PERDEU!')
 print(f'GAME OVER! Você venceu {vitoria} vez(es)')
