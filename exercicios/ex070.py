@@ -20,9 +20,12 @@ while True:
     if preco > 1000:
         QuantProdtMil += 1
     
+    print('-'*40)
     pergCont = str(input('Quer continuar? [S/N] ').strip().upper()[0])
+    print('-'*40)
     while pergCont != 'S' and pergCont != 'N':
         pergCont = str(input('Quer continuar? [S/N] ').strip().upper()[0])
+        print('-'*40)
     if pergCont == 'N':
         break
 print(f'{' FIM DO PROGRAMA ':-^40}')
