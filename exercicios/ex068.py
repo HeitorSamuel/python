@@ -1,11 +1,9 @@
 from random import randint
 
-print('-='*25)
+print('-='*30)
 print('VAMOS JOGAR PAR OU ÍMPAR')
-print('-='*25)
+print('-='*30)
 
-resultado = ''
-escolhaJog = ''
 vitoria = 0
 
 while True:
@@ -19,24 +17,22 @@ while True:
     somaNum = comput + jogador
 
     if somaNum % 2 == 0:
-        resultado = 'PAR'
-        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resultado}')
-        if escolhaJog == resultado[0]:
-            print('Você VENCEU!')
-            print('Vamos Jogar novamente...')
-            vitoria += 1
-        else:
-            print('Você PERDEU!')
-            break
+        resultado = 'P'
+        resp = 'PAR'
+    else:
+        resultado = 'I'
+        resp = 'ÍMPAR'
+    print('-'*60)
+    print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resp}')
+    print('-'*60)
+    if escolhaJog == resultado:
+        print('Você VENCEU!')
+        print('Vamos Jogar novamente...')
+        print('-='*30)
+        vitoria += 1
+    else:
+        print('Você PERDEU!')
+        print('-='*30)
+        break
 
-    elif somaNum % 2 == 1:
-        resultado = 'ÍMPAR'
-        print(f'Você jogou {jogador} e o computador {comput}. Total de {somaNum} DEU {resultado}')
-        if escolhaJog == resultado[0]:
-            print('Você VENCEU!')
-            print('Vamos Jogar novamente...')
-            vitoria += 1
-        else:
-            print('Você PERDEU!')
-            break
 print(f'GAME OVER! Você venceu {vitoria} vez(es)')
