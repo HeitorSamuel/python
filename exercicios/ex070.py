@@ -1,7 +1,7 @@
 print('-'*40)
 print(f'{' LOJA SUPER BARATÃO ':^40}')
 print('-'*40)
-TotalComp = QuantProdtMil = contProdt = maior = menor = 0
+TotalComp = QuantProdtMil = contProdt = precoMaior = precoMenor = 0
 nomeMaior = nomeMenor = ''
 
 while True:
