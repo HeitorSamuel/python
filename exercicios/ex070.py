@@ -1,8 +1,8 @@
 print('-'*40)
 print(f'{' LOJA SUPER BARATÃO ':^40}')
 print('-'*40)
-TotalComp = QuantProdtMil = contProdt = precoMaior = precoMenor = 0
-nomeMaior = nomeMenor = ''
+TotalComp = QuantProdtMil = contProdt = precoMenor = 0
+nomeMenor = ''
 
 while True:
     nomeProdt = str(input('Digite o nome do Produto: ').strip())
@@ -10,8 +10,8 @@ while True:
     TotalComp += preco
     contProdt += 1
     if contProdt == 1:
-        precoMaior = precoMenor = preco
-        nomeMaior = nomeMenor = nomeProdt
+        precoMenor = preco
+        nomeMenor = nomeProdt
     else:
         if preco < precoMenor:
             precoMenor = preco

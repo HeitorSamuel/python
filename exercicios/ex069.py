@@ -1,6 +1,4 @@
-contIdade = 0
-contHomem = 0
-contMulherMenor = 0
+contIdade = contHomem = contMulherMenor = 0
 while True:
     print('-'*30)
     print(f'{'CADASTRE UMA PESSOA':^30}')
@@ -25,5 +23,5 @@ while True:
 
 print(f'{' FIM DO PROGRAMA ':=^30}')
 print(f'Total de pessoas com mais de 18 anos: {contIdade}')
-print(f'Ao todo, temos {contHomem} homens cadastrados!')
-print(f'E temos {contMulherMenor} mulheres com menos de 20 anos')
+print(f'Ao todo, temos {contHomem} homem(ns) cadastrado(s)!')
+print(f'E temos {contMulherMenor} mulher(es) com menos de 20 anos')

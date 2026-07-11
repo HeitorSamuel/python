@@ -1,17 +1,15 @@
 print('='*40)
 print(f'{'BANCO DE GOTHAM':^40}')
 print('='*40)
-ValorRest =  quant50 = quant20 = quant10 = quant1 = 0
+quant50 = quant20 = quant10 = quant1 = 0
 pergValor = int(input('Que valor você quer sacar? R$').strip())
 while True:
     
     if pergValor >= 50:
         pergValor -= 50
-        ValorRest = pergValor
         quant50 += 1
     elif pergValor >= 20:
         pergValor -= 20
-        ValorRest = pergValor
         quant20 += 1
     elif pergValor >= 10:
         pergValor -= 10
@@ -19,7 +17,6 @@ while True:
         quant10 += 1
     elif pergValor >= 1:
         pergValor -= 1
-        ValorRest = pergValor
         quant1 += 1
     else:
         break

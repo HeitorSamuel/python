@@ -10,11 +10,14 @@ while True:
     
     jogador = int(input('Digite um número: '))
 
-    escolhaJog = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]
-
     comput = randint(0, 10)
 
     somaNum = comput + jogador
+
+    escolhaJog = ' '
+    
+    while escolhaJog != 'P' and escolhaJog != 'I':
+        escolhaJog = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]
 
     if somaNum % 2 == 0:
         resultado = 'P'
