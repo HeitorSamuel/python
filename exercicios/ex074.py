@@ -1,7 +1,7 @@
 from random import randint
 
 numSort = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
-print(f'Os valores sorteados foram:', end= ' ')
+print(f'Os valores sorteados foram:', end=' ')
 for c in numSort:  
     print(f'{c}', end=' ')
 

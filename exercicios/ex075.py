@@ -7,7 +7,6 @@ n4 = int(input('Digite o 4° número: '))
 
 numTotal = (n1, n2, n3, n4)
 
-
 print(f'Você digitou os valores {numTotal}')
 print(f'O número 9 apareceu {numTotal.count(9)} veze(s)')
 if 3 in numTotal:
