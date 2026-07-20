@@ -1,16 +1,15 @@
 valores = []
 while True:
     valor = int(input('Digite um valor: ').strip())
-    for i, v in enumerate(valores):
+    if valor in valores:
+        print('Valor duplicado! Não vou adicionar...')
+    else:
         valores.append(valor)
-        if v == valor:
-            print('Valor duplicado! Não vou adicionar...')
-        else:
-            valores.append(valor)
-            print('Valor adicionado com sucesso!')
-    '''perg = str(input('Quer continuar? [S/N]').strip().upper())
-    while 'S' not in perg and 'N' not in perg:
-        perg = str(input('Quer continuar? [S/N]').strip().upper())
+        print('Valor adicionado com sucesso!')
+    perg = str(input('Quer continuar? [S/N] ').strip().upper())
+    while perg not in 'S' and perg not in 'N':
+        perg = str(input('Quer continuar? [S/N] ').strip().upper())
     if perg == 'N':
-        break'''
+        break
+valores.sort()
 print(f'Você digitou os valores {valores}')
