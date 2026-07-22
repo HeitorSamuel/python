@@ -6,7 +6,7 @@ while True:
     valores.append(num)
     perg  = str(input('Quer continuar? [S/N] ').strip().upper()[0])
     while perg not in "N" and perg not in "S":
-        perg  = str(input('Quer continuar? [S/N] ').strip().upper()[0])
+        perg  = str(input('Valor inválido! Quer continuar? [S/N] ').strip().upper()[0])
     if perg == 'N':
         break
 print('-='*30)
