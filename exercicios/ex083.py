@@ -1,20 +1,21 @@
 pilha = []
-
+erro = False
 expressao = str(input('Digite uma expressão: ').strip())
 
 for c in expressao:
     if c == '(':
         pilha.append('(')
     elif c == ')':
-        if '(' in pilha:
-            pilha.pop()
+        if not pilha:
+            erro = True
+            break
         else:
-            print('Expressão inválida!')
+            pilha.pop()
 
-
-if not pilha:
-    print('Expressão válida!')
-else:
+if erro == True or pilha:
     print('Expressão inválida!')
+else:
+    print('Expressão válida!')
+
 
 
