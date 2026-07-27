@@ -1,34 +1,40 @@
 pessoas = []
 dadoIndv = []
 maiorP = menorP = 0
-maiorN = menorN = ''
 listaMaiorN = []
 listaMenorN = []
 cont = 0
 while True:
-    dadoIndv.append(str(input('Nome: ').strip()))
-    dadoIndv.append(float(input('Peso: ').strip()))
+    nome = str(input('Nome: ').strip())
+    peso = float(input('Peso: ').strip())
+    dadoIndv.append(nome)
+    dadoIndv.append(peso)
     pessoas.append(dadoIndv[:])
     cont += 1
+    if cont == 1:
+        maiorP = menorP = peso
+    else:
+        if peso > maiorP:
+            maiorP = peso
+        elif peso < menorP:
+            menorP = peso
     dadoIndv.clear()
-    for p in pessoas:
-        if cont == 1:
-            maiorP = menorP = p[1]
-            maiorN = menorN = p[0]
-        else:
-            if p[1] > maiorP:
-                maiorP = p[1]
-                maiorN = p[0]
-                listaMaiorN.append(maiorN)
-            elif p[1] < menorP:
-                menorP = p[1]
-                menorN = p[0]
-                listaMenorN.append(menorN)
     perg = str(input('Quer continuar? [S/N] ').strip().upper()[0])
     while 'S' not in perg and 'N' not in perg:
         perg = str(input('Quer continuar? [S/N] ').strip().upper()[0])
     if perg == 'N':
         break
-print(f'Ao todo você cadastrou {len(pessoas)} pessoas.')
-print(f'O maior peso foi de {maiorP}Kg. Peso de {listaMaiorN}')
-print(f'O menor peso foi de {menorP}Kg. Peso de {listaMenorN}')
+
+for p in pessoas:
+    if len(pessoas) == 1:
+        print(f'Não há maior e nem menor peso, só {p[0]} com o peso de {p[1]}Kg')
+    else:
+        if p[1] == maiorP:
+            listaMaiorN.append(p[0])
+        elif p[1] == menorP:
+            listaMenorN.append(p[0])
+
+print(f'Ao todo você cadastrou {len(pessoas)} pessoa(s).')
+if len(pessoas) > 1:
+    print(f'O maior peso foi de {maiorP}Kg. Peso de {listaMaiorN}')
+    print(f'O menor peso foi de {menorP}Kg. Peso de {listaMenorN}')
