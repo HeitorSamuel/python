@@ -26,15 +26,17 @@ while True:
         break
 
 for p in pessoas:
-    if len(pessoas) == 1:
-        print(f'Não há maior e nem menor peso, só {p[0]} com o peso de {p[1]}Kg')
-    else:
-        if p[1] == maiorP:
-            listaMaiorN.append(p[0])
-        elif p[1] == menorP:
-            listaMenorN.append(p[0])
-
+    if p[1] == maiorP:
+        listaMaiorN.append(p[0])
+    elif p[1] == menorP:
+        listaMenorN.append(p[0])
 print(f'Ao todo você cadastrou {len(pessoas)} pessoa(s).')
+if len(pessoas) == 1:
+    print(f'Não há maior e nem menor peso, só {pessoas[0][0]} com o peso de {pessoas[0][1]}Kg')
 if len(pessoas) > 1:
-    print(f'O maior peso foi de {maiorP}Kg. Peso de {listaMaiorN}')
-    print(f'O menor peso foi de {menorP}Kg. Peso de {listaMenorN}')
+    print(f'O maior peso foi de {maiorP}Kg. Peso de', end=' ')
+    for nomeMaior in listaMaiorN:
+        print(f'[{nomeMaior}]', end=' ')
+    print(f'\nO menor peso foi de {menorP}Kg. Peso de', end=' ')
+    for nomeMenor in listaMenorN:
+        print(f'[{nomeMenor}]', end=' ')
