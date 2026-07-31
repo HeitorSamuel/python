@@ -9,4 +9,6 @@ for l in range(0, 3):
         if len(linha) > 2:
             matriz.append(linha[:])
             linha.clear()
-print(matriz)
+for linhas in matriz:
+    for num in linhas:
+        print(f'[ {num} ]', end='')
