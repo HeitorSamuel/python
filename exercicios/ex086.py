@@ -12,3 +12,4 @@ for l in range(0, 3):
 for linhas in matriz:
     for num in linhas:
         print(f'[ {num} ]', end='')
+    print()
