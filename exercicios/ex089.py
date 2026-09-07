@@ -23,6 +23,5 @@ while True:
     mostrNotas = int(input('Mostrar notas de qual aluno? (999 interrompe): ').strip())
     if mostrNotas == 999:
         break
-    else:
-        if mostrNotas == pos:
-            print(f'Notas de {al[0]} são {al[1]}')
+    if mostrNotas <= len(alunosGeral) - 1:
+        print(f'Notas de {alunosGeral[mostrNotas][0]} são {alunosGeral[mostrNotas][1:]}')

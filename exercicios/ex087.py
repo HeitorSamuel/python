@@ -1,8 +1,6 @@
 matriz = []
 linha = []
-somaPares = 0
-somaTerColun = 0
-maiorSegLinha = 0
+somaPares = somaTerColun = maiorSegLinha = 0
 for l in range(0, 3):
     for c in range(0, 3):
         item = int(input(f'Digite um valor para [{l}, {c}]: '))
@@ -28,5 +26,3 @@ print('-='*30)
 print(f'A soma dos valores pares é {somaPares}.')
 print(f'A soma dos valores da terceira coluna é {somaTerColun}.')
 print(f'O maior valor da segunda linha é {maiorSegLinha}.')
-
-
