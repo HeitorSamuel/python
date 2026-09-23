@@ -50,7 +50,7 @@ elif sobrevivente == 'Carol':
 #Primeiro Dia
 
 if sobrevivente == 'Rick':
-  kit.remove("besta")
+  kit.remove("taco_beisebol")
   print(f'Kit atual sobrevivente: {kit}')
 
 elif sobrevivente == 'Michonne':
@@ -65,7 +65,40 @@ elif sobrevivente == 'Daryl':
   print(f'Kit atual Daryl: {kit_daryl}')
   
 elif sobrevivente == 'Carol':
-  kit_carol.append(kit[2:5])
+  kit_carol += kit[2:5]
   
 #Segundo dia:
+
+if sobrevivente == 'Rick':
+  kit_rick += kit[2:]
+
+elif sobrevivente == 'Michonne':
+  kit_michonne+= kit[2:]
+
+elif sobrevivente == 'Daryl': 
+  kit_daryl+= kit[2:]
+
+elif sobrevivente == 'Carol':
+  kit_carol+= kit[2:]
+
+del kit[2:]
+
+print('Agora com as costas mais leves, podemos continuar com a nossa caminhada\n')
+
+#Terceiro dia
+
+print('Finalmente chegamos em Alexandria!\n')
+print(f'Ufa, podemos ficar aqui por um tempo,{sobrevivente}\n')
+
+if sobrevivente == 'Rick':
+  print(f'Kit do sobrevivente: {kit}\n Kit do {sobrevivente}: {kit_rick}')
+
+elif sobrevivente == 'Michonne':
+  print(f'Kit do sobrevivente: {kit}\n Kit do {sobrevivente}: {kit_michonne}')
+
+elif sobrevivente == 'Daryl': 
+  print(f'Kit do sobrevivente: {kit}\n Kit do {sobrevivente}: {kit_daryl}')
+
+elif sobrevivente == 'Carol':
+  print(f'Kit do sobrevivente: {kit}\n Kit do {sobrevivente}: {kit_carol}')
 
