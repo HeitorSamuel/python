@@ -3,4 +3,6 @@ def soma(a, b):
     s = a+b
     print(f'A soma de {a} + {b} = {s}')
 
-soma(7,8)
+num1 = int(input())
+num2 = int(input())
+soma(num1,num2)
